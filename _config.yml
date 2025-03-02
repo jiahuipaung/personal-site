@@ -1,0 +1,10 @@
+title: "Jiahui Pang"
+description: "Master at University of Macau"
+baseurl: ""
+url: "https://jiahuipaung.github.io"
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

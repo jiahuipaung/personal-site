@@ -4,28 +4,66 @@
     <meta charset="UTF-8">
     <title>个人主页</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
-    <header>
+    <!-- 顶部导航 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jiahui Pang</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 主页内容 -->
+    <header class="text-center mt-5">
         <img src="images/profile.jpg" alt="Profile" class="avatar">
-        <h1>Zhedong Zheng</h1>
-        <p>Assistant Professor at University of Macau</p>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Blog</a>
-            <a href="#">work</a>
-            <a href="#">About</a>
-            <a href="#">Resources</a>
-            <a href="#">Join Us</a>
-        </nav>
+        <h1>Jiahui Pang</h1>
+        <p>Master at University of Macau</p>
+        <p>
+            <a href="https://github.com/jiahuipaung" class="btn btn-dark"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/yourlinkedin" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://linkedin.com/in/yourlinkedin" class="btn btn-primary"><i class="fab fa-linkedin"></i> Email</a>
+        </p>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>I am a tenure-track assistant professor at the University of Macau...</p>
+    <section class="container mt-5">
+        <h2>About me</h2>
+        <p>我是，研究方向包括机器学习、计算机视觉等...</p>
+    </section>
+
+    <section class="container mt-5">
+        <h2>最新博客</h2>
+        <ul>
+            <li><a href="blog/first-post.html">我的第一篇博客</a></li>
+        </ul>
     </section>
 
     <footer>
-        <p>&copy; 2024 Jiahui Pang. All rights reserved.</p>
+        <p>&copy; 2025 Jiahui Pang. All rights reserved.</p>
     </footer>
+
+    <!-- 引入 Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXX');
+    </script>
+
 </body>
 </html>
